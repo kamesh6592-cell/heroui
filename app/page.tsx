@@ -3,6 +3,7 @@
 import { Button } from "@heroui/button";
 import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Input } from "@heroui/input";
+import { Image } from "@heroui/image";
 import { Avatar } from "@heroui/avatar";
 import { Chip } from "@heroui/chip";
 import { Progress } from "@heroui/progress";
@@ -37,6 +38,37 @@ export default function Home() {
             Beautiful, fast and modern React UI library components in action.
           </div>
         </div>
+      </section>
+
+      <Divider className="mb-8" />
+
+      {/* HeroUI Showcase Card */}
+      <section className="mb-12 flex justify-center">
+        <Card className="max-w-[400px]">
+          <CardHeader className="flex gap-3">
+            <Image
+              alt="heroui logo"
+              height={40}
+              radius="sm"
+              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+              width={40}
+            />
+            <div className="flex flex-col">
+              <p className="text-md">HeroUI</p>
+              <p className="text-small text-default-500">heroui.com</p>
+            </div>
+          </CardHeader>
+          <Divider />
+          <CardBody>
+            <p>Make beautiful websites regardless of your design experience.</p>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <Link isExternal showAnchorIcon href="https://github.com/heroui-inc/heroui">
+              Visit source code on GitHub.
+            </Link>
+          </CardFooter>
+        </Card>
       </section>
 
       <Divider className="mb-8" />
