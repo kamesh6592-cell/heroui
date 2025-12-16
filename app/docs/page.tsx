@@ -154,7 +154,7 @@ export default function DocsPage() {
                   <Chip color="success" size="sm" variant="flat">Basic</Chip>
                 </div>
                 <p className="text-default-600 mb-4">
-                  A simple C program that prints "Hello, World!" to the console.
+                  A simple C program that prints &quot;Hello, World!&quot; to the console.
                 </p>
                 <Snippet
                   hideSymbol
